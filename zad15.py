@@ -25,8 +25,9 @@ assert abs(pi - 3.141) < 10e-3
 
 pi = 1
 w = sqrt(0.5)
+epsilon = 10e-10
 
-for i in range(10000):
+while abs(w - 1) > epsilon:
     pi *= w
     w = sqrt(0.5 + 0.5 * w)
 
