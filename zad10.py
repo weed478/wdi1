@@ -13,6 +13,7 @@ def is_ideal(number):
     return factor_sum == number
 
 
-n = 137438691328
-print("{} {}jest wspaniałe"
-      .format(n, "" if is_ideal(n) else "nie "))
+# too slow someone help :(
+for i in range(1000000):
+    if is_ideal(i):
+        print("{} jest wspaniałe".format(i))
