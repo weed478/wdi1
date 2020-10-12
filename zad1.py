@@ -3,6 +3,7 @@ b = 1
 
 while a < 1000000:
     print(a)
-    b = a + b
-    a = b - a
+    a, b = b, a + b
+    # b = a + b
+    # a = b - a
 
