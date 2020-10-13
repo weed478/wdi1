@@ -7,7 +7,9 @@ def is_ideal(number):
     while x*x < number:
         div, mod = divmod(number, x)
         if mod == 0:
-            factor_sum += x + div
+            factor_sum += x
+            if x != div:
+                factor_sum += div
         x += 1
 
     return factor_sum == number
