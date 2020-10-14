@@ -18,7 +18,7 @@ import math
 
 n = -1.0
 x = -1.0
-while n < 1:
+while n < 0:
     try:
         x = float(input("Enter x (arg of cos): "))
         n = int(input("Enter n (accuracy): "))
@@ -26,22 +26,17 @@ while n < 1:
         print("Not a number")
         continue
 
-    if n < 1:
-        print("n > 1   plz")
+    if n < 0:
+        print("n > 0   plz")
 
 
 def cos_maclaurin(x, n):
     total = 1.0
-    minus = -1
-    num = x * x
-    den = 2
+    last = 1
 
-    for i in range(1, n + 1, 1):
-        total += (minus * num / den)
-        minus *= -1
-        num *= x * x
-        den *= (2 * i + 1) * (2 * i + 2)
-
+    for i in range(n):
+        last = last * (-1) * (x * x) / ((2 * i + 1) * (2 * i + 2))
+        total += last
     return total
 
 
