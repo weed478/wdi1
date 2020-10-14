@@ -1,4 +1,4 @@
-n = 64
+n = int(input("> "))
 
 nSum = 0
 i = 0

@@ -20,7 +20,7 @@ a + 2b
 8a + 13b ; a = 9 b = 3
 """
 
-year = 2020
+year = int(input("> "))
 
 x = 1
 y = 1

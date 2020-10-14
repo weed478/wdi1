@@ -1,4 +1,3 @@
-number = -1
 while True:
     number = int(input("Enter number: "))
     if number < 1:
