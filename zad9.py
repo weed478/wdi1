@@ -13,7 +13,6 @@ def factors(number):
     print(number)
 
 
-n = -1
 while True:
     n = int(input("Enter number: "))
     if n < 1:
