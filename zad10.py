@@ -16,13 +16,15 @@ def is_ideal(number):
 
 
 def is_prime(n):
-    if n <= 1 or n % 2 == 0:
+    if n == 2:
+        return True
+    elif n < 2 or n % 2 == 0:
         return False
-    i = 2
-    while i <= n / 2:
+    i = 3
+    while i * i <= n:
         if n % i == 0:
             return False
-        i += 1
+        i += 2
 
     return True
 
