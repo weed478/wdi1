@@ -29,6 +29,7 @@ def is_prime(n):
     return True
 
 
+# https://pl.wikipedia.org/wiki/Liczba_doskona%C5%82a#Metoda_Euklidesa_znajdowania_liczb_doskona%C5%82ych
 def gen_perfect(n):
     i = 1
     while True:
